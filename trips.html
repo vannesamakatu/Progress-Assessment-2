@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paradise Pearl</title>
+
+    <!--Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet">
+    <style>.carousel-inner > .item > img { width:100%; height:570px; } </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top">
+        <div class="container">
+          
+          <!-- logo -->
+          <a class="navbar-brand" href="#">
+            <img src="assets/white logo.png" alt="Logo" height="100">
+          </a>
+  
+          <!-- nav items -->
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link"  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="trips.html">Trips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkout.html">Tickets</a>
+            </li>
+          </ul>
+  
+        </div>
+
+    </nav>
+
+
+    <!--content-->
+
+<!--Trip cards -->
+
+
+
+<!-- Header -->
+<div class="container mt-5 pt-5">
+    <h2 class="trip-header">Trips Of The Season</h2>
+</div>
+
+<!-- Filter Sorting -->
+<div class="row">
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="filterRadio" id="allTripsFilter" value="" autocomplete="off" checked>
+    <label class="btn btn-outline-primary" for="allTripsFilter">All</label>
+  
+    <input type="radio" class="btn-check" name="filterRadio" id="britishIslandFilter" value="british" autocomplete="off">
+    <label class="btn btn-outline-primary" for="britishIslandFilter">British Island</label>
+  
+    <input type="radio" class="btn-check" name="filterRadio" id="frenchIslandFilter" value="french" autocomplete="off">
+    <label class="btn btn-outline-primary" for="frenchslandFilter">French Island</label>
+  </div>
+
+<!-- sorting -->
+  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="sortRadio" id="defaultSort" value="low to high" autocomplete="off">
+    <label class="btn btn-outline-secondary" for="defaultSort">Price: Low to High</label>
+  
+    <input type="radio" class="btn-check" name="sortRadio" id="daysSort" value="days" autocomplete="off">
+    <label class="btn btn-outline-secondary" for="daysSort">Days</label>
+  </div>
+</div>
+
+<!-- -------- -->
+
+<!-- Trip Cards -->
+
+<div class="row py-5 gy-3" id="tripContainer">
+        <div class="col-4 trip-card british">
+
+        <!-- Card -->
+          <div class="card">
+            <img class="card-img-top " src="assets/n island.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title" id="nameText">British Island</h5>
+                <p class="card-text" id="daysText">5 Days</p>
+                <p class="card-text" id="priceText">R30 000</p>
+             
+              <a href="" class="btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-4">
+          <div class="card">
+            <img class="card-img-top trip-card french" src="assets/ns island.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" id="nameText">French Island</h5>
+              <p class="card-text" id="daysText">10 Days</p>
+              <p class="card-text" id="priceText">R60 000</p>
+              <a href="" class="btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+          
+        <div class="col-4">
+            <div class="card trip-card cayman">
+              <img class="card-img-top" src="assets/kevin-foster-wUqi6iFH9ws-unsplash.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" id="nameText"> Cayman Island</h5>
+                <p class="card-text" id="daysText">15 Days</p>
+                <p class="card-text" id="priceText">R100 000</p>
+                <a href="" class="btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+
+
